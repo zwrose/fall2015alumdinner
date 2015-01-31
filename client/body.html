@@ -1,0 +1,49 @@
+<body>
+  <div class="container">
+    <h1 class="center">Sigma Tau DKE's 125th Reunion Celebration</h1>
+    <h3 class="center">May 1st-3rd, 2015</h3>
+    <h3 class="center">403 Memorial Drive, Cambridge, MA 02138</h3>
+
+    <div class="row">
+      <div class="col c4 agenda-left center">
+        <h4>Friday, May 1st</h4>
+        <strong>7pm-10pm:</strong> Welcome Reception
+      </div>
+      <div class="col c4 agenda-center center">
+        <h4>Saturday, May 2nd</h4>
+        <strong>MAIN EVENT</strong><br />
+        <strong>2pm:</strong> Bar Opens<br />
+        <strong>3pm-5pm:</strong> ASTADKE General Meeting<br />
+        <strong>5pm-6pm:</strong> Cocktail Hour<br />
+        <strong>6pm-7pm:</strong> Dinner Served<br />
+        <strong>7pm-?:</strong> Recognitions, Celebrations, General Merrymaking
+      </div>
+      <div class="col c4 agenda-right center">
+        <h4>Sunday, May 3rd</h4>
+        <strong>10am-12pm:</strong> Farewell Brunch
+      </div>
+    </div>
+    {{> insertRSVP}}
+  
+    <h2>Friday Attendees</h2>
+    <ul>
+      {{#each friAttendees}}
+      {{> attendee}}
+      {{/each}}
+    </ul>
+  
+    <h2>Saturday Attendees</h2>
+    <ul>
+      {{#each satAttendees}}
+      {{> attendee}}
+      {{/each}}
+    </ul>
+  
+    <h2>Sunday Attendees</h2>
+    <ul>
+        {{#each sunAttendees}}
+          {{> attendee}}
+        {{/each}}
+    </ul>
+  </div>
+</body>

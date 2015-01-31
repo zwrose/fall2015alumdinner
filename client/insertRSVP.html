@@ -1,0 +1,17 @@
+<template name="insertRSVP">
+  {{#autoForm collection="Attendees" id="insertRSVP" template="plain" type="insert"}}
+    <fieldset>
+      <legend>Send your RSVP!</legend>
+      {{> afQuickField name='firstName' template="plain" class="test"}}
+      {{> afQuickField name='lastName'}}
+      {{> afQuickField name='classYear'}}
+      {{> afQuickField name='fri'}}
+      {{> afQuickField name='friNum'}}
+      {{> afQuickField name='sat'}}
+      {{> afQuickField name='satNum'}}
+      {{> afQuickField name='sun'}}
+      {{> afQuickField name='sunNum'}}
+    </fieldset>
+    <button type="submit" class="btn btn-sm">Send</button>
+  {{/autoForm}}
+</template>
