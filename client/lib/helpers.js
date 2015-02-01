@@ -20,7 +20,8 @@ Template.body.helpers({
 
 Template.insertRSVP.events({
   "click .already": function (event) {
-    return Session.set("alreadyRSVPd", true);
+    Session.set("alreadyRSVPd", true);
+    return $(window).scrollTop($('#insertRSVP').offset().top);
   }
 //   "submit": function (event) {
 //     return Session.set("alreadyRSVPd", true);
@@ -34,6 +35,7 @@ Template.iveAlreadyRSVPd.events({
 });
 AutoForm.addHooks("insertRSVP", {
   onSuccess: function() {
-    return Session.set("alreadyRSVPd", true);
+    Session.set("alreadyRSVPd", true);
+    return $(window).scrollTop($('#insertRSVP').offset().top);
   }
 })

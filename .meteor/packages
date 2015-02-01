@@ -6,6 +6,6 @@
 
 meteor-platform
 autopublish
-insecure
 aldeed:collection2
 aldeed:autoform
+ongoworks:security

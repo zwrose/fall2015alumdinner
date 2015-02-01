@@ -1,3 +1,6 @@
+label, p, li, legend {
+  font-family: Georgia,Times,Times New Roman,serif; 
+}
 .center {
   text-align: center;
 }
@@ -10,6 +13,10 @@
 .line {
   margin-right: 25px;
   margin-left: 25px;
+  height: 1px;
+  color: #333333;
+  background-color: #333333;
+  border: none;
 }
 body {
   background-image: url(/house-bk.jpg);
@@ -34,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .headline {
   text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 .subhead {
@@ -44,5 +51,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 .daycard {
   background-color: rgba(255,255,255,0.6);
+  margin: 10px 10px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.daycard-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.list-line {
+  margin-right: 25px;
+  margin-left: 25px;
+  height: 3px;
+  color: #333333;
+  background-color: #333333;
+  border: none;
+}
+.RSVPcard {
+  background-color: rgba(255,255,255,0.6);
+  margin: 10px 10px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.RSVPinput {
+  width: 90% !important;
+  margin: 5px;
+}
+.RSVPshell {
   margin: 0px 10px;
+}
+.RSVPinputbox {
+  margin-bottom: 15px;
+}
+label {
+  font-size: 14px;
+}
+fieldset {
+  border: 1px solid #ccc;
+}
+legend {
+  border: 1px solid #ccc;
+}
+.RSVPinstr {
+  font-size: 20px;
+  margin-top: 0px;
+}
+.RSVPbtn {
+  padding: 18px 22px 18px;
+  font-size: 18px;
+}
+.already, .again {
+  padding: 3px 4px 4px;
+}
+.flip {
+  padding: 15px;
+}
+.slim {
+  margin: 0px;
+}
+.slimbot {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
