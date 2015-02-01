@@ -1,0 +1,15 @@
+<template name="iveAlreadyRSVPd">
+  <fieldset>
+    <h3>Thank you for RSVPing!</h3>
+    <p>If you plan on attending the Saturday Main Event and would like to submit the $50/attendee requested donation via PayPal, you can do so by using the buttion below. You can also make out a check to ASTADKE and mail it to ASTADKE Alumni Relations, c/o Zach Rose, 80 Fawcett St, #236, Cambridge, MA 02138.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="98SK6YPX93WWY">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" style="display: block; margin: 0 auto;" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    <p>If you need to change your RSVP, please send an email to <a href="mailto:alumni_relations@astadke.org">alumni_relations@astadke.org</a> with a note describing the changes, and the guest list will be updated shortly!</p>
+    
+    <p class="right"><button type="button" class="again btn btn-sm">Return to RSVP form</button></p>
+  </fieldset>
+</template>

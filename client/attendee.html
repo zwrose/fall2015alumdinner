@@ -1,3 +1,7 @@
 <template name="attendee">
-  <li>{{firstName}} {{lastName}}, Class of {{classYear}}</li>
+  <p>{{firstName}} {{lastName}}, Class of {{classYear}}</p>
+  {{#if comments}}
+    <p>"{{comments}}"</p>
+  {{/if}}
+  <hr class="line" />
 </template>
