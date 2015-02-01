@@ -11,3 +11,38 @@
   margin-right: 25px;
   margin-left: 25px;
 }
+body {
+  background-image: url(/house-bk.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #EBE9DC;
+  background-position: top;
+  color: #333333;
+}
+@media (max-width:870px) {
+  body {
+    background-image: url(/house-bk.jpg);
+    background-repeat: no-repeat;
+    background-size: 870px auto;
+    background-color: #EBE9DC;
+    background-position: top;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+}
+.headline {
+  text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.subhead {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+}
+.daycard {
+  background-color: rgba(255,255,255,0.6);
+  margin: 0px 10px;
+}

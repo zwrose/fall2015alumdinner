@@ -1,51 +1,51 @@
 <template name="insertRSVP">
-  {{#autoForm collection="Attendees" id="insertRSVP" type="insert"}}
-    <fieldset class="RSVPcard">
-      <legend>Send your RSVP!</legend>
-      <div class="row">
-        <div class="col c3">
-          {{> afFieldLabel name='firstName' template="plain"}}<br />
-          {{> afFieldInput name='firstName' template="plain"}}<br />
-          {{> afFieldLabel name='lastName' template="plain"}}<br />
-          {{> afFieldInput name='lastName' template="plain"}}<br />
-          {{> afFieldLabel name='classYear' template="plain"}}<br />
-          {{> afFieldInput name='classYear' template="plain"}}<br />
-          {{> afFieldLabel name='comments' template="plain"}}<br />
-          {{> afFieldInput name='comments' template="plain" class="comments" rows="6"}}
-          
-        </div>
-        <div class="col c9">
-          <div class="row">
-            <div class="col c4">
-              {{> afFieldInput name='fri' template="plain"}}<br />
-              {{> afQuickField name='friNum' template="plain"}}
-            </div>
-            <div class="col c4">
-              {{> afFieldInput name='sat' template="plain"}}<br />
-              {{> afQuickField name='satNum' template="plain"}}
-            </div>
-            <div class="col c4">
-              {{> afFieldInput name='sun' template="plain"}}<br />
-              {{> afQuickField name='sunNum' template="plain"}}
-            </div>
+  {{#autoForm collection="Attendees" id="insertRSVP" type="insert" class="container"}}
+  <fieldset class="RSVPcard">
+    <legend>Send your RSVP!</legend>
+    <div class="row">
+      <div class="col c3">
+        {{> afFieldLabel name='firstName' template="plain"}}<br />
+        {{> afFieldInput name='firstName' template="plain"}}<br />
+        {{> afFieldLabel name='lastName' template="plain"}}<br />
+        {{> afFieldInput name='lastName' template="plain"}}<br />
+        {{> afFieldLabel name='classYear' template="plain"}}<br />
+        {{> afFieldInput name='classYear' template="plain"}}<br />
+        {{> afFieldLabel name='comments' template="plain"}}<br />
+        {{> afFieldInput name='comments' template="plain" class="comments" rows="6"}}
+
+      </div>
+      <div class="col c9">
+        <div class="row">
+          <div class="col c4">
+            {{> afFieldInput name='fri' template="plain"}}<br />
+            {{> afQuickField name='friNum' template="plain"}}
           </div>
-          <div class="row">
-            <div class="col c8">
-              <p><em>Instructions:</em></p>
-              <ul>
-                <li>Please include <strong>yourself</strong> in total attendee count for each day.</li>
-                <li>If you are not planning on attending certain day, just leave that day's box unchecked.</li>
-                <li>If you cannot attend at all but would like to leave a note, leave all boxes unchecked.</li>
-              </ul>
-            </div>
-            <div class="col c4">
-              <p class="center"><button type="submit" class="btn btn-b btn-sm">Send my RSVP</button></p>
-          <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd</button></p>
-            </div>
+          <div class="col c4">
+            {{> afFieldInput name='sat' template="plain"}}<br />
+            {{> afQuickField name='satNum' template="plain"}}
+          </div>
+          <div class="col c4">
+            {{> afFieldInput name='sun' template="plain"}}<br />
+            {{> afQuickField name='sunNum' template="plain"}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col c8">
+            <p><em>Instructions:</em></p>
+            <ul>
+              <li>Please include <strong>yourself</strong> in total attendee count for each day.</li>
+              <li>If you are not planning on attending certain day, just leave that day's box unchecked.</li>
+              <li>If you cannot attend at all but would like to leave a note, leave all boxes unchecked.</li>
+            </ul>
+          </div>
+          <div class="col c4">
+            <p class="center"><button type="submit" class="btn btn-b btn-sm">Send my RSVP</button></p>
+            <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd</button></p>
           </div>
         </div>
       </div>
-    </fieldset>
-    
+    </div>
+  </fieldset>
+
   {{/autoForm}}
 </template>
