@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .daycard {
   background-color: rgba(255,255,255,0.6);
-  margin: 10px 10px;
-  padding: 5px 5px;
+  margin: 10px 10px 10px;
+  padding: 15px 5px 5px;
   border-radius: 10px;
 }
 .daycard-title {
