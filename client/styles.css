@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .RSVPcard {
   background-color: rgba(255,255,255,0.6);
-  margin: 10px 10px;
+  margin: 10px 10px 20px;
   padding: 5px 15px;
   border-radius: 10px;
 }
@@ -112,4 +112,10 @@ legend {
 .slimbot {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+.headcard {
+  background-color: rgba(255,255,255,0.6);
+  margin: 20px 10px 10px;
+  padding: 15px;
+  border-radius: 10px;
 }
