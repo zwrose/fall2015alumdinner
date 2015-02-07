@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
 }
 .daycard {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
   margin: 10px 10px 10px;
   padding: 15px 5px 5px;
   border-radius: 10px;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 .RSVPcard {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
   margin: 10px 10px 20px;
   padding: 5px 15px;
   border-radius: 10px;
@@ -114,8 +114,13 @@ legend {
   margin-bottom: 0px;
 }
 .headcard {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
   margin: 20px 10px 10px;
   padding: 15px;
   border-radius: 10px;
+}
+.glow {
+  outline: none;
+  border-color: #3c5;
+  box-shadow: 0 0 10px #3c5;
 }

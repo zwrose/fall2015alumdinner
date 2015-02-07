@@ -2,16 +2,16 @@ Session.set("alreadyRSVPd", false);
 
 Template.body.helpers({
   friAttendees: function () {
-    return Attendees.find({fri: true});
+    return Attendees.find({fri: true}, {sort: {createdOn: -1}});
   },
   satAttendees: function () {
-    return Attendees.find({sat: true});
+    return Attendees.find({sat: true}, {sort: {createdOn: -1}});
   },
   sunAttendees: function () {
-    return Attendees.find({sun: true});
+    return Attendees.find({sun: true}, {sort: {createdOn: -1}});
   },
   nonAttendees: function () {
-    return Attendees.find({sun: false, sat:false, fri: false});
+    return Attendees.find({sun: false, sat:false, fri: false}, {sort: {createdOn: -1}});
   },
   checkAlreadyRSVPd: function() {
     return !Session.get("alreadyRSVPd");
@@ -21,11 +21,17 @@ Template.body.helpers({
 Template.insertRSVP.events({
   "click .already": function (event) {
     Session.set("alreadyRSVPd", true);
-    return $(window).scrollTop($('#insertRSVP').offset().top);
+    return $(window).scrollTop($('#flipcard').offset().top);
+  },
+  "change #fricheck": function(event) {
+    return $('#fripeeps').toggleClass("glow");
+  },
+  "change #satcheck": function(event) {
+    return $('#satpeeps').toggleClass("glow");
+  },
+  "change #suncheck": function(event) {
+    return $('#sunpeeps').toggleClass("glow");
   }
-//   "submit": function (event) {
-//     return Session.set("alreadyRSVPd", true);
-//   }
 });
 
 Template.iveAlreadyRSVPd.events({
@@ -36,6 +42,6 @@ Template.iveAlreadyRSVPd.events({
 AutoForm.addHooks("insertRSVP", {
   onSuccess: function() {
     Session.set("alreadyRSVPd", true);
-    return $(window).scrollTop($('#insertRSVP').offset().top);
+    return $(window).scrollTop($('#flipcard').offset().top);
   }
 })

@@ -19,37 +19,39 @@
         <div class="row">
           <div class="col c4">
             <div class="RSVPshell">
-              {{> afFieldInput name='fri' template="plain" class="RSVPinputbox"}}
-              {{> afQuickField name='friNum' template="plain" class="RSVPinput"}}
+              {{> afFieldInput name='fri' template="plain" id="fricheck" class="RSVPinputbox"}}
+              {{> afQuickField name='friNum' template="plain" id="fripeeps" class="RSVPinput"}}
             </div>
           </div>
           <div class="col c4">
             <div class="RSVPshell">
-              {{> afFieldInput name='sat' template="plain" class="RSVPinputbox"}}
-              {{> afQuickField name='satNum' template="plain" class="RSVPinput"}}
+              {{> afFieldInput name='sat' template="plain" id="satcheck" class="RSVPinputbox"}}
+              {{> afQuickField name='satNum' template="plain" id="satpeeps" class="RSVPinput"}}
             </div>
           </div>
           <div class="col c4">
             <div class="RSVPshell">
-              {{> afFieldInput name='sun' template="plain" class="RSVPinputbox"}}
-              {{> afQuickField name='sunNum' template="plain" class="RSVPinput"}}
+              {{> afFieldInput name='sun' template="plain" id="suncheck" class="RSVPinputbox"}}
+              {{> afQuickField name='sunNum' template="plain" id="sunpeeps" class="RSVPinput"}}
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col c8">
             <div class="RSVPshell">
+              {{> afFieldInput name='noAttend' template="plain" class="RSVPinputbox"}}
               <p class="RSVPinstr"><em>Instructions:</em></p>
               <ul>
                 <li>Please <strong>include yourself</strong> in total attendee count for each day.</li>
                 <li>If you are not planning on attending certain day, just leave that day's box unchecked.</li>
-                <li>If you cannot attend at all but would like to leave a note, leave all boxes unchecked.</li>
+                <li>Fields marked with '*' are required. If nothing happens after clicking "Send my RSVP" please be sure all required fileds are completed.</li>
               </ul>
             </div>
           </div>
           <div class="col c4">
             <p class="center"><button type="submit" class="RSVPbtn btn btn-b btn-sm">Send my RSVP</button></p>
-            <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd</button></p>
+            <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd/<br />I need to buy my tickets</button></p>
+            <p class="center">Questions? Just <a href="mailto:alumni_relations@astadke.org">click here to send us an email</a>!</p>
           </div>
         </div>
       </div>

@@ -19,10 +19,10 @@
           <p><strong>MAIN EVENT</strong><br /><br />
           <strong>2pm:</strong> Bar Opens<br />
           <strong>3pm-5pm:</strong> ASTADKE General Meeting<br />
-          <strong>5pm-6pm:</strong> Cocktail Hour<br />
-          <strong>6pm-7pm:</strong> Dinner Served<br />
-          <strong>7pm-?:</strong> Recognitions, Celebrations, General Merrymaking</p>
-          <p><em>A $50/person donation is requested to help offset costs of Saturday's main event.</em></p>
+          <strong>5pm-7pm:</strong> Cocktails and Appetizers<br />
+          <strong>7pm-8pm:</strong> Dinner Served<br />
+          <strong>8pm-?:</strong> Celebration and General Merrymaking</p>
+          <p><em>Note: A $50/person dinner ticket is required to help offset costs of Saturday's main event.</em></p>
         </div>
       </div>
       <div class="col c4 agenda-right center">
@@ -33,11 +33,13 @@
         </div>
       </div>
     </div>
-    {{#if checkAlreadyRSVPd}}
-      {{> insertRSVP}}
-    {{else}}
-      {{> iveAlreadyRSVPd}}
-    {{/if}}
+    <div id="flipcard">
+      {{#if checkAlreadyRSVPd}}
+        {{> insertRSVP}}
+      {{else}}
+        {{> iveAlreadyRSVPd}}
+      {{/if}}
+    </div>
     
     <div class="RSVPcard flip">
       <h3 class="daycard-title">Accomodations</h3>
