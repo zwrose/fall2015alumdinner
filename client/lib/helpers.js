@@ -11,7 +11,7 @@ Template.body.helpers({
     return Attendees.find({sun: true}, {sort: {createdOn: -1}});
   },
   nonAttendees: function () {
-    return Attendees.find({sun: false, sat:false, fri: false}, {sort: {createdOn: -1}});
+    return Attendees.find({noAttend: true}, {sort: {createdOn: -1}});
   },
   checkAlreadyRSVPd: function() {
     return !Session.get("alreadyRSVPd");
