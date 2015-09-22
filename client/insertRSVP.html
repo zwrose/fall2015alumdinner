@@ -3,59 +3,47 @@
   <fieldset>
     <legend>Send your RSVP!</legend>
     <div class="row">
-      <div class="col c3">
+      <div class="col c4">
         <div class="RSVPshell">
-          {{> afFieldLabel name='firstName' template="plain" class="RSVPinput"}}<br />
-          {{> afFieldInput name='firstName' template="plain" class="RSVPinput"}}<br />
+            {{> afFieldLabel name='firstName' template="plain" class="RSVPinput"}}<br />
+            {{> afFieldInput name='firstName' template="plain" class="RSVPinput"}}<br />
+          </div>
+      </div>
+      <div class="col c4">
+        <div class="RSVPshell">
           {{> afFieldLabel name='lastName' template="plain" class="RSVPinput"}}<br />
           {{> afFieldInput name='lastName' template="plain" class="RSVPinput"}}<br />
+        </div>
+      </div>
+      <div class="col c4">
+        <div class="RSVPshell">
           {{> afFieldLabel name='classYear' template="plain" class="RSVPinput"}}<br />
           {{> afFieldInput name='classYear' template="plain" class="RSVPinput"}}<br />
+        </div>
+      </div>
+      <div class="col c12">
+        <div class="RSVPshell">
           {{> afFieldLabel name='comments' template="plain" class="RSVPinput"}}<br />
           {{> afFieldInput name='comments' template="plain" class="comments RSVPinput" rows="4"}}
         </div>
       </div>
-      <div class="col c9">
-        <div class="row">
-          <div class="col c4">
-            <div class="RSVPshell">
-              {{> afFieldInput name='fri' template="plain" id="fricheck" class="RSVPinputbox"}}
-              {{> afQuickField name='friNum' template="plain" id="fripeeps" class="RSVPinput"}}
-            </div>
-          </div>
-          <div class="col c4">
-            <div class="RSVPshell">
+    </div>  
+    <div class="row">
+
+            <div class="RSVPshell center">
+              <strong>Please choose one:</strong>
               {{> afFieldInput name='sat' template="plain" id="satcheck" class="RSVPinputbox"}}
-              {{> afQuickField name='satNum' template="plain" id="satpeeps" class="RSVPinput"}}
-            </div>
-          </div>
-          <div class="col c4">
-            <div class="RSVPshell">
-              {{> afFieldInput name='sun' template="plain" id="suncheck" class="RSVPinputbox"}}
-              {{> afQuickField name='sunNum' template="plain" id="sunpeeps" class="RSVPinput"}}
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col c8">
-            <div class="RSVPshell">
               {{> afFieldInput name='noAttend' template="plain" class="RSVPinputbox"}}
-              <p class="RSVPinstr"><em>Instructions:</em></p>
-              <ul>
-                <li>Please <strong>include yourself</strong> in the total attendee count for each day.</li>
-                <li>If you are not planning on attending a certain day, just leave that day's box unchecked.</li>
-                <li>Fields marked with '*' are required. If nothing happens after clicking "Send my RSVP" please be sure all required fields are completed.</li>
-              </ul>
             </div>
-          </div>
-          <div class="col c4">
+
+      </div>
+    <div class="row">
             <p class="center"><button type="submit" class="RSVPbtn btn btn-b btn-sm">Send my RSVP</button></p>
-            <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd/<br />I need to buy my tickets</button></p>
+            <p class="center"><button type="button" class="already btn btn-sm">I've already RSVP'd</button></p>
             <p class="center">Questions? Just <a href="mailto:alumni_relations@astadke.org" target="_blank">click here to send us an email</a>!</p>
           </div>
-        </div>
-      </div>
-    </div>
+      
+    
   </fieldset>
 
   {{/autoForm}}
